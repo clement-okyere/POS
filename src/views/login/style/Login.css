@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .container {
   display: flex;
   flex-direction: row;
+  font-family: 'Roboto', sans-serif;
 }
 
 .sidepic_container {
@@ -10,7 +12,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  border: solid;
+  border: #ccc;
 }
 
 .login_container {
@@ -23,8 +25,50 @@
 }
 
 .login_box {
-  border: solid black;
-  padding: 20px;
+  border: solid gray;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
   height: 20vh;
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_box:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login_item {
+  margin-bottom: 10px;
+}
+
+.login_submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login_btn {
+  background-color: #4786ff;
+  border: solid #ccc;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 10px;
+  color: white;
+}
+
+.icon_border {
+  border: solid grey 1px;
+}
+
+.brand_name {
+  font-family: 'Roboto', sans-serif;
 }
