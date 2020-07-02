@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidepic_container {
+  width: 50%;
+  height: 100vh;
+  background-image: url(../../../assets/images/login_back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: solid;
+}
+
+.login_container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login_box {
+  border: solid black;
+  padding: 20px;
+  height: 20vh;
+  width: 50%;
+}
