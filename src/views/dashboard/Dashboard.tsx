@@ -9,4 +9,4 @@ const Dashboard: React.FC<IProps> = ({ appName }) => {
   return <h1>Dashboard here {appName}</h1>
 }
 
-export const DashboardaPge = withBaseLayout(Dashboard)
+export const DashboardPage = withBaseLayout(Dashboard)
