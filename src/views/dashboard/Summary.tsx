@@ -5,8 +5,8 @@ interface IProps {
   appName: string
 }
 
-const Dashboard: React.FC<IProps> = ({ appName }) => {
+const Summary: React.FC<IProps> = ({ appName }) => {
   return <h1>Dashboard here {appName}</h1>
 }
 
-export const DashboardPage = withBaseLayout(Dashboard)
+export const SummaryPage = withBaseLayout(Summary)

@@ -2,13 +2,13 @@ import React from 'react'
 import './App.css'
 import { Switch, Route } from 'react-router-dom'
 import { LoginPage } from './views/login/Login'
-import { DashboardPage } from './views/dashboard/Dashboard'
+import { SummaryPage } from './views/dashboard/Summary'
 
 const App: React.FC<{}> = () => {
   return (
     <Switch>
       <Route path="/login" component={LoginPage} />
-      <Route path="/dashboard" component={DashboardPage} />
+      <Route path="/dashboard" component={SummaryPage} />
     </Switch>
   )
 }
