@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  posweb-dev:
+    container_name: posweb-dev
+    build:
+      context: ./posweb
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3001:3000"
+    volumes:
+      - ".:/app"
+      - "/app/node_modules"
+    environment:
+      - NODE_ENV=development
+    stdin_open: true
+  pos-api:
+    build:
+      context: ./pos_api
+      dockerfile: Dockerfile.dev
+    container_name: pos-api
+    volumes:
+      - ./src:/home/node/app/src
+    expose:
+      - "8001"
+    ports:
+      - "4002:8001"
+      - "9229:9229"
+    command: npm run start-dev

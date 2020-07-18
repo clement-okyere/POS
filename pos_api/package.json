@@ -4,7 +4,7 @@
   "description": "Custom GraphQL API for PSA advisor applications",
   "main": "build/start.js",
   "scripts": {
-    "test": "env NODE_ENV=test jest --coverage",
+    "test": "jest --coverages",
     "test:watch": "env NODE_ENV=test jest --coverage --watchAll",
     "eslint": "eslint . --fix --ext .ts",
     "start-dev": "ts-node-dev --respawn src/boot.ts",
@@ -65,7 +65,6 @@
     "typescript": "^3.7.4"
   },
   "dependencies": {
-    "@types/puppeteer": "^3.0.1",
     "apollo-server-express": "^2.9.15",
     "aws-sdk": "^2.657.0",
     "axios": "^0.19.1",
