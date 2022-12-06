@@ -79,7 +79,7 @@
     "graphqurl": "^0.3.3",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.27.0",
-    "qs": "^6.9.4",
+    "qs": "^6.9.7",
     "reflect-metadata": "^0.1.13",
     "save-dev": "0.0.1-security",
     "type-graphql": "^0.17.6",
